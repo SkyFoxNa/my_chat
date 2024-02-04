@@ -203,7 +203,7 @@ class Server:
 async def main():
     await log_command(f'{datetime.now().strftime("%d-%m-%Y %H:%M:%S")} Server start')
     server = Server()
-    async with websockets.serve(server.ws_handler, 'localhost', 8080):
+    async with websockets.serve(server.ws_handler, '0.0.0.0', 8080):
         await asyncio.Future()  # run forever
 
 

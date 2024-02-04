@@ -1,6 +1,6 @@
 console.log('Hello world!')
 
-const ws = new WebSocket('ws://localhost:8080')
+const ws = new WebSocket('wss://chat-skyhome.koyeb.app')
 
 formChat.addEventListener('submit', (e) => {
     e.preventDefault()
